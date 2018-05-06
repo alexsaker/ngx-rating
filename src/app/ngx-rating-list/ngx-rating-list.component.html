@@ -1,0 +1,4 @@
+<div class="rating-list" *ngFor="let rating of ratings;let i = index;">
+  <ngx-rating-element [ratingColor]="getRatingColor(i)" (ratingElementHover)="updateRating(i)" [ratingType]="ratingType">
+  </ngx-rating-element>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ratings</title>
+</head>
+
+<body>
+    <ngx-rating rating-color="blue" rating-number-max="5" rating-number="1" rating-type="android" comment="Rating comment for android"
+        label="Rating Android"></ngx-rating>
+    <ngx-rating rating-color="yellow" rating-number-max="3" rating-number="2" rating-type="star" comment="Rating comment for star"
+        label="Rating Star"></ngx-rating>
+    <ngx-rating rating-color="red" rating-number-max="3" rating-number="2" rating-type="heart" comment="Rating comment for heart"
+        label="Rating Heart"></ngx-rating>
+    <script src="elements.js"></script>
+    <script>
+        const myRating = document.querySelector('ngx-rating');
+        myRating.addEventListener('ratingNumberUpdate', (event) => console.log(event))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px 2px;
+}

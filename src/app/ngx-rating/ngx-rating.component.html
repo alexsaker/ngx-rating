@@ -1,0 +1,6 @@
+<div class="rating-container">
+  <div class="rating-label">{{label}}</div>
+  <ngx-rating-list (ratingNumberUpdate)="onRatingNumberUpdate($event)" [ratingColor]="ratingColor" [ratingNumberMax]="ratingNumberMax"
+    [ratingNumber]="ratingNumber" [ratingType]="ratingType"></ngx-rating-list>
+  <div class="rating-comment">{{comment}}</div>
+</div>
